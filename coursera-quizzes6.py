@@ -15,19 +15,20 @@ for i, filename in enumerate(filenames):
 
 print('{} {}'.format('\n', filenames))    
 print('{} {}'.format('\n', newfilenames))  
+print('\n\n')
 
+###
+def guest_list(guests):
+	for index, guest in enumerate(guests):
+		guest_name, age, occupation = guests[index]
+		print('{} is {} years old and works as {}'.format(guest_name, age, occupation))
 
-def pig_latin(text):
-  say = ""
-  # Separate the text into words
-  words = text.split()
-  print(words)
-#   for word in words:
-#     # Create the pig latin word and add it to the list
-#     words.append('{}{}'.format(text[0], 'ay'))
-#     # Turn the list back into a phrase
-#     words = say.join(words)
-#   return words
-		
-# print(pig_latin("hello how are you")) # Should be "ellohay owhay reaay ouyay"
-# print(pig_latin("programming in python is fun")) # Should be "rogrammingpay niay ythonpay siay unfay"
+guest_list([('Ken', 30, "Chef"), ("Pat", 35, 'Lawyer'), ('Amanda', 25, "Engineer")])
+
+#Click Run to submit code
+"""
+Output should match:
+Ken is 30 years old and works as Chef
+Pat is 35 years old and works as Lawyer
+Amanda is 25 years old and works as Engineer
+"""
