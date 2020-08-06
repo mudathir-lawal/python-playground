@@ -66,3 +66,35 @@ print(octal_to_string(755)) # Should be rwxr-xr-x
 print(octal_to_string(644)) # Should be rw-r--r--
 print(octal_to_string(750)) # Should be rwxr-x---
 print(octal_to_string(600)) # Should be rw-------
+
+
+def pig_latin(text):
+  say = " "
+  # Separate the text into words
+  words = text.split()
+  new_words_list = []
+
+  for word in words:
+    # Create the pig latin word and add it to the list
+    new_words_list.append('{}{}{}'.format(word[1:], word[0], 'ay'))
+    # Turn the list back into a phrase
+  new_text = say.join(new_words_list)
+  return new_text
+		  
+print('\n')      
+print(pig_latin("hello how are you")) # Should be "ellohay owhay reaay ouyay"
+print(pig_latin("programming in python is fun")) # Should be "rogrammingpay niay ythonpay siay unfay"
+
+
+####
+def pig_latin(text):
+  say = ""
+  # Separate the text into words
+  words = text.split()
+  return words
+
+words = pig_latin("hello how are you")
+print('\n')
+print(words)
+print(type(words))
+
