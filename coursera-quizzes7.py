@@ -170,6 +170,24 @@ print(format_address("55 North Center Drive"))
 # Should print "house number 55 on street named North Center Drive"
 ######
 
+def combine_lists(list1, list2):
+  # Generate a new list containing the elements of list2
+  # Followed by the elements of list1 in reverse order
+  list2.reverse()
+  list1.extend( list2 )
+  # ordered_list2 = [ (list2[(len(list2)- 1)- i]) for i, student in enumerate(list2) ]
+  # list1 = list1 + ordered_list2
+  # for stud in ordered_list2:
+  #   list1.append( stud ) 
+  return list1
+
+Jamies_list = ["Alice", "Cindy", "Bobby", "Jan", "Peter"]
+Drews_list = ["Mike", "Carol", "Greg", "Marcia"]
+print(combine_lists(Jamies_list, Drews_list))
+####################
+
+
+
 
 
 
