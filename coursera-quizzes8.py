@@ -94,4 +94,15 @@ Taylors_guests = { "David":4, "Nancy":1, "Robert":2, "Adam":1, "Samantha":3, "Ch
 
 print(combine_guests(Rorys_guests, Taylors_guests))
 ######
+def email_list(domains):
+	emails = []
+	for domain in domains.keys():
+		for idx, users in enumerate(domains.values()):
+			while idx < len(users):
+				emails.append('{}@{}'.format(users[idx], domain))
+				idx = idx + 1
+	return(emails)
+
+print(email_list({"gmail.com": ["clark.kent", "diana.prince", "peter.parker"], "yahoo.com": ["barbara.gordon", "jean.grey"], "hotmail.com": ["bruce.wayne"]}))
+#####
 
