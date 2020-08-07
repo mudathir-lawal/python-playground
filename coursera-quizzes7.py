@@ -71,6 +71,21 @@ def squares(start, end):
 print(squares(2, 3)) # Should be [4, 9]
 print(squares(1, 5)) # Should be [1, 4, 9, 16, 25]
 print(squares(0, 10)) # Should be [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+#####
+
+def combine_lists(list1, list2):
+  # Generate a new list containing the elements of list2
+  # Followed by the elements of list1 in reverse order
+  ordered_list2 = [ (list2[(len(list2)- 1)- i]) for i, student in enumerate(list2) ]
+  # complete_list = [ list1.append( stud ) for stud in ordered_list2 ]
+  complete_list = list1 + ordered_list2
+  return complete_list 
+
+Jamies_list = ["Alice", "Cindy", "Bobby", "Jan", "Peter"]
+Drews_list = ["Mike", "Carol", "Greg", "Marcia"]
+print(combine_lists(Jamies_list, Drews_list))
+#####
+
 
 
 
