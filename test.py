@@ -28,6 +28,8 @@ print(group_list("Marketing", ["Mike", "Karen", "Jake", "Tasha"])) # Should be "
 print(group_list("Engineering", ["Kim", "Jay", "Tom"])) # Should be "Engineering: Kim, Jay, Tom"
 print(group_list("Users", "")) # Should be "Users:"
 
+print('Adding test string ...')
+
 
 # UNDER CONSTRUCTION:
 # def pig_latin(text):
