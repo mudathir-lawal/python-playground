@@ -16,3 +16,4 @@ def count_letters(text):
         result[letter] += 1
     return result    
             
+count_letters("Shokolokobangoshe")
