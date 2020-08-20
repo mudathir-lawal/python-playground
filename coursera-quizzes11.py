@@ -16,4 +16,4 @@ def count_letters(text):
         result[letter] += 1
     return result    
             
-count_letters("Shokolokobangoshe")
+no_of_chars = count_letters("Shokolokobangoshe")
