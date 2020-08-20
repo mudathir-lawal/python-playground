@@ -17,3 +17,4 @@ def count_letters(text):
     return result    
             
 no_of_chars = count_letters("Shokolokobangoshe")
+print(no_of_chars)
