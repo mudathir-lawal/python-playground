@@ -18,3 +18,4 @@ def count_letters(text):
             
 no_of_chars = count_letters("Shokolokobangoshe")
 print(no_of_chars)
+print(no_of_chars.values())
