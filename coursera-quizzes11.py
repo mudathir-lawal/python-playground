@@ -11,7 +11,7 @@ type(result)
 def count_letters(text):
     result = {}
     for letter in text:
-        if letter not result:
+        if letter != result:
             result[letter] = 0
         result[letter] += 1
     return result    
