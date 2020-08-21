@@ -1,3 +1,38 @@
+class Elevator:
+    def __init__(self, bottom, top, current):
+        """Initializes the Elevator instance."""
+        self.current = current
+        self.top = top
+        self.bottom = bottom
+    
+    def __str__(self):
+        print("Current floor: {}".format(self.current))
+        
+    def up(self):
+        """Makes the elevator go up one floor."""
+        if self.current == self.top:
+            return
+        else:
+            self.current = self.current + 1
+        
+    def down(self):
+        """Makes the elevator go down one floor."""
+        if self.current == self.bottom:
+            return
+        else:
+            self.current = self.current - 1
+        
+    def go_to(self, floor):
+        """Makes the elevator go to the specific floor."""
+        if floor >= self.bottom and floor <= self.top:
+            self.current = floor
+        else:
+            return
+        
+elevator = Elevator(-1, 10, 0)
+
+
+
 class Furniture:
 	color = ""
 	material = ""
