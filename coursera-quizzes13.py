@@ -6,7 +6,7 @@ class Elevator:
         self.bottom = bottom
     
     def __str__(self):
-        print("Current floor: {}".format(self.current))
+        return "Current floor: {}".format(self.current)
         
     def up(self):
         """Makes the elevator go up one floor."""
