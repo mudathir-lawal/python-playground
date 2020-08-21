@@ -46,6 +46,16 @@ elevator = Elevator(-1, 10, 0)
  class Cow(Animal):
      sound = "Moooo"
 
+hamlet = Piglet("Hamlet")
+  hamlet.speak()
+# Oink! I'm Hamlet! Oink!
+ 
+class Cow(Animal):
+    sound = "Moooo"
+ 
+milky = Cow("Milky White")
+milky.speak()
+# Moooo I'm Milky White! Moooo
 
 class Clothing:
   material = ""
