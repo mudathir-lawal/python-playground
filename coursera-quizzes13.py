@@ -18,3 +18,10 @@ print(describe_furniture(table))
 # Should be "This piece of furniture is made of brown wood"
 print(describe_furniture(couch)) 
 # Should be "This piece of furniture is made of red leather"
+
+
+class Piglet:
+	pass
+
+hamlet = Piglet()	
+	
