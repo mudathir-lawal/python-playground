@@ -69,7 +69,8 @@ class LoadBalancing:
         # Sum the load of each server and divide by the amount of servers
         avg = 0
         for machine in self.servers:
-            avg += server.load() / len(self.servers)
+            avg += machine.load()
+        avg = avg / len(self.servers)   
         return avg
 
     def ensure_availability(self):
