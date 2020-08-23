@@ -33,9 +33,7 @@ class Server:
 
 server = Server()
 server.add_connection("192.168.1.1")
-
 print(server.load())
-
 
 server.close_connection("192.168.1.1")
 print(server.load())
