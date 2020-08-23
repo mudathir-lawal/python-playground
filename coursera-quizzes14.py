@@ -44,3 +44,11 @@ class Zoo:
         return result
 
 zoo = Zoo()
+
+turtle = Turtle("Turtle") #create an instance of the Turtle class
+snake = Snake("Snake") #create an instance of the Snake class
+
+zoo.add_animal(turtle)
+zoo.add_animal(snake)
+
+print(zoo.total_of_category("reptile")) #how many zoo animal types in the reptile category
