@@ -30,3 +30,8 @@ class Server:
         return "{:.2f}%".format(self.load())
     
 #End Portion 1#
+
+server = Server()
+server.add_connection("192.168.1.1")
+
+print(server.load())
