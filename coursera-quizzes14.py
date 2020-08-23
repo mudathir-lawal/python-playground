@@ -9,3 +9,14 @@ class Repository:
          for package in self.packages.values():
              result += package.size
          return result
+
+
+class Animal:
+    name = ""
+    category = ""
+    
+    def __init__(self, name):
+        self.name = name
+    
+    def set_category(self, category):
+        self.category = category
