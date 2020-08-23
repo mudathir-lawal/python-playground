@@ -25,3 +25,6 @@ class Turtle(Animal):
     category = "reptile"
 
 print(Turtle.category)
+
+class Snake(Animal):
+    category = "reptile"
