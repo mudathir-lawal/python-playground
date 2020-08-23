@@ -52,3 +52,4 @@ zoo.add_animal(turtle)
 zoo.add_animal(snake)
 
 print(zoo.total_of_category("reptile")) #how many zoo animal types in the reptile category
+
