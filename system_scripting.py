@@ -57,12 +57,13 @@ class LoadBalancing:
     def close_connection(self, connection_id):
         """Closes the connection on the the server corresponding to connection_id."""
         # Find out the right server
-        for connection in self.connections.keys():
+        for connection, server in enumerate(self.connections.items()):
             if connection == connection_id:
                 # Close the connection on the server
                 server.close_connection[connection_id]
                 # Remove the connection from the load balancer
                 del self.connections[connection]
+                server.load()
 
     def avg_load(self):
         """Calculates the average load of all servers"""
