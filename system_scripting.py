@@ -80,5 +80,5 @@ class LoadBalancing:
     def __str__(self):
         """Returns a string with the load for each server."""
         loads = [str(server) for server in self.servers]
-        return "[{}]".format(",".join('loads'))
+        return "[{}]".format(",".join(loads))
 #End Portion 2#
