@@ -1,7 +1,20 @@
+##
+ # File:        system_scripting2.py
+ # Author:      Mudathir Lawal
+ # Email:       nigercode@gmail.com
+ # GitHub:      github.com/mudathirlawal
+ # Last Edit:   24th August, 2020.   
+ # Version:     1.0.0 EN
+ #
+ # Purpose:     Process a list of `Event` objects using their attributes to 
+ #              generate a report
+ # 				
+##
+
 """
 Problem Statement:
-We need to process a list of Event objects using their attributes to generate a 
-report that lists all users currently logged in to the machines.
+We need to process a list of `Event` objects using their attributes to generate 
+a report that lists all users currently logged in to the machines.
 """
 
 def get_event_date(event):
